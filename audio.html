@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+            audio
+        </title>
+        <style>
+            body
+            {
+                background-image:url('m2.jpg');
+                background-position:left ;
+                background-size: contain;
+                
+            }
+            h1
+            {
+                text-align: left;
+                font-size: 100px;
+                font-family:cursive;
+                color:lavender;
+
+            }
+            .nav a
+        {
+            float: left;
+            color:rgb(28, 16, 3)
+;
+            text-align:right;
+            padding: 10px 10px;
+            text-decoration: double;
+            font-size: medium;
+        }
+        .nav a:hover
+        {
+            background-color: rgb(133, 28, 28);
+            color: rgb(239, 26, 26);
+
+        }
+        .nav a.ac
+        {
+            background-color:rgb(235, 235, 232);
+            color: rgb(5, 19, 19);
+            font-family: serif;
+        }
+        
+        </style>
+         <script>
+            function cimage()
+            {
+                var a=document.getElementById('ad');
+                 let displayImage =document.getElementById('img1')
+                 if(displayImage.src.match('paly.png'))
+                 {
+                    displayImage.src='puse.png'
+                    ad.play();
+                    
+                 }
+                 else
+                 {
+                    displayImage.src='paly.png'
+                    ad.pause();
+                    
+
+                 }
+                }
+            
+           
+            
+        </script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <a class="ac" href="#home">Home</a>
+            <a href="#menu">menu</a>
+            <a href="#contact">Contact Us</a> 
+            <a href="#about">About</a></div>
+        <h1>
+            music
+        </h1>
+      <div>  <img src="paly.png" height="100px" width="100px" id="img1" onclick="cimage()"></div><br>
+
+        <div>
+        <audio id="ad" >
+            <source src="nar.mp3" type="audio/mp3">
+        </audio>
+       
+      
+        </div>
+
+    </body>
+</html>
